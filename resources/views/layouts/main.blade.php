@@ -20,6 +20,8 @@
     @yield('content')
   </div>
 
+  @include('layouts.modal')
+
   {{-- script --}}
   @include('layouts.scripts')
 </body>

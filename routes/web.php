@@ -21,10 +21,10 @@ Route::fallback(function () {
 Route::controller(MahasiswaController::class)->group(function () {
   Route::get('/', 'index')->name('index');
   Route::get('/delete/{id}', 'delete')->name('mahasiswa-delete')->where('id', '[0-9]+');
-  Route::get('/add', 'add')->name('mahasiswa-add');
-  Route::get('/edit', 'edit')->name('mahasiswa-edit');
 
   Route::post('/list', 'list')->name('mahasiswa-list');
+  Route::post('/modal', 'modal')->name('mahasiswa-modal');
   Route::post('/_add', '_add');
   Route::post('/_edit', '_edit');
+  Route::post('/_delete', '_delete');
 });

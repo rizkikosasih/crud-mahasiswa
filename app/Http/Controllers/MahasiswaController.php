@@ -84,10 +84,12 @@ class MahasiswaController extends Controller
   public function modal(Request $request): JsonResponse|RedirectResponse
   {
     $type = $request->input('type');
+    $code = 200;
     $title = 'Form Tambah Mahasiswa';
     $body = 'Hello ' . $type;
     $footer = '';
     return response()->json([
+      'code' => $code,
       'title' => $title,
       'body' => $body,
       'footer' => $footer,

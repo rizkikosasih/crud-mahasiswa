@@ -11,9 +11,9 @@
   <div class="card-body">
     {{-- Table --}}
     <div class="px-0">
-      <table id="mahasiswa" class="table table-bordered table-striped w-100">
+      <table id="mahasiswa" class="table table-bordered table-hover table-striped w-100">
         <thead>
-          <tr class="table-light">
+          <tr>
             @foreach ($tableHeader as $th)
               <th class="align-middle text-center">{!! $th !!}</th>
             @endforeach

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ env('DEFAULT_LOCALE') }}" data-path="{{ url('/') }}">
+<html lang="{{ env('DEFAULT_LOCALE') }}" data-appName={{ env('APP_NAME') }} data-path="{{ url('/') }}" data-bs-theme="{{ isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'light' }}">
 
 <head>
   <meta charset="UTF-8">

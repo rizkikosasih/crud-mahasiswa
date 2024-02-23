@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "formulahendry.auto-complete-tag",
+    "abusaidm.html-snippets",
+    "gamunu.vscode-yarn",
+    "zignd.html-css-class-completion",
+    "onecentlin.laravel-extension-pack",
+    "ecmel.vscode-html-css",
+    "bmewburn.vscode-intelephense-client",
+  ]
+}

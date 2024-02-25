@@ -20,8 +20,7 @@ class MahasiswaSeeder extends Seeder
     for ($i = 1; $i <= 15; $i++) {
       $name = $i % 2 === 0 ? 'male' : 'female';
       $jenis_kelamin = $i % 2 === 0 ? 'pria' : 'wanita';
-      DB::table('mahasiswa')->insert([
-        'id' => $i,
+      $mhsId = DB::table('mahasiswa')->insertGetId([
         'nama' => $faker->name($name),
         'alamat' => $faker->address(),
         'jenis_kelamin' => $jenis_kelamin,
@@ -31,7 +30,7 @@ class MahasiswaSeeder extends Seeder
 
       for ($k = 1; $k <= rand(1, 10); $k++) {
         DB::table('mhs_to_matkul')->insert([
-          'mahasiswa_id' => $i,
+          'mahasiswa_id' => $mhsId,
           'nama_matkul' => $faker->words('2', true),
           'created_at' => $faker->dateTimeBetween('-1 Month'),
           'updated_at' => now(),

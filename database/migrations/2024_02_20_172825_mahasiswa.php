@@ -12,9 +12,10 @@ return new class extends Migration {
   {
     Schema::create('mahasiswa', function (Blueprint $table) {
       $table->id();
-      $table->string('nama');
-      $table->string('alamat');
-      $table->enum('jenis_kelamin', ['pria', 'wanita']);
+      $table->string('nama')->default('');
+      $table->string('alamat')->default('');
+      $table->enum('jenis_kelamin', ['pria', 'wanita'])->default('pria');
+      $table->text('file_krs')->default('');
       $table->timestamps();
     });
   }

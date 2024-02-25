@@ -26,5 +26,4 @@ Route::controller(MahasiswaController::class)->group(function () {
   Route::post('/modal', 'modal')->name('mahasiswa-modal');
   Route::post('/_add', '_add');
   Route::post('/_edit', '_edit');
-  Route::post('/_delete', '_delete');
 });

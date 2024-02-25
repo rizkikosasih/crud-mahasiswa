@@ -30,6 +30,5 @@
 
 <p style="color:red;">
   #Note: <br/>
-  Sebelum melakukan yarn build / npm build
-  Silahkan install package node_module terlebih dahulu
+  Sebelum melakukan yarn build / npm build, Silahkan install package node_modules terlebih dahulu
 </p>

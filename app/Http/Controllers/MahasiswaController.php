@@ -37,13 +37,10 @@ class MahasiswaController extends Controller
 
     /* Records Mahasiswa */
     $recordsMahasiswa = DB::table('mahasiswa')
-      ->select(['mahasiswa.id'])
-      ->leftJoin('mhs_to_matkul', 'mhs_to_matkul.mahasiswa_id', '=', 'mahasiswa.id')
       ->where(DB::raw(1), '=', '1')
-      ->where('mahasiswa.nama', 'like', '%' . $search . '%')
-      ->orWhere('mahasiswa.alamat', 'like', '%' . $search . '%')
-      ->orWhere('mahasiswa.jenis_kelamin', 'like', '%' . $search . '%')
-      ->groupBy('mahasiswa_id')
+      ->where('nama', 'like', '%' . $search . '%')
+      ->orWhere('alamat', 'like', '%' . $search . '%')
+      ->orWhere('jenis_kelamin', 'like', '%' . $search . '%')
       ->get()
       ->count();
 

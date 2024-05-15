@@ -3,5 +3,7 @@
 @section('title', '404 Not Found')
 
 @section('content')
-<h1 class="text-danger">Halaman Tidak Ditemukan</h1>
+<div class="text-center">
+  <h1 class="text-danger">Halaman Tidak Ditemukan</h1>
+</div>
 @endsection

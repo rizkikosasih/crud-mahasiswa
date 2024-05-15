@@ -1,4 +1,6 @@
-// Import all of Bootstrap's CSS
-@import './../../../node_modules/bootstrap/scss/bootstrap';
-
-@import './../css/app.css';
+.dt-container > .row [class^='col'] > div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}

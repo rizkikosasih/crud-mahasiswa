@@ -10,20 +10,17 @@
   <meta name="keywords" content="{{config('variable.appKeyword')}}">
   <meta name="author" content="{{config('variable.appAuthor')}}">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-
-  {{-- style --}}
-  @include('layouts.styles')
 </head>
 
 <body>
-  <div class="container-fluid mt-3">
+  <div class="container mt-3">
     @yield('content')
   </div>
 
   @include('layouts.modal')
 
   {{-- script --}}
-  @include('layouts.scripts')
+  @vite(['resources/assets/js/app.js'])
 </body>
 
 </html>

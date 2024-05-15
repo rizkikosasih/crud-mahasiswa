@@ -89,7 +89,13 @@
       <input type="file" class="form-control image" placeholder="File KRS" name="file_krs"/>
     </div>
     <div class="border text-center p-3">
-      <img src="{{ isset($mhs->file_krs) && $mhs->file_krs ? asset('assets/img/file_krs/' . $mhs->file_krs) : asset('assets/img/svg/no-image.svg') }}" class="img-fluid rounded bg-light preview-image" width="150" loading="lazy">
+      <img
+        src="{{ isset($mhs->file_krs) && $mhs->file_krs ? asset('assets/img/file_krs/' . $mhs->file_krs) : asset('assets/img/svg/no-image.svg') }}"
+        class="img-fluid rounded bg-light preview-image"
+        width="150"
+        loading="lazy"
+        onerror="this.onerror=null;this.src='{{ asset('assets/img/svg/no-image.svg') }}'"
+      >
     </div>
   </div>
   <div class="d-flex justify-content-end gap-3" id="form-footer">

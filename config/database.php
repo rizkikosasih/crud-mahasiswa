@@ -67,7 +67,7 @@ return [
         'NO_ZERO_IN_DATE',
         'NO_ZERO_DATE',
         'ERROR_FOR_DIVISION_BY_ZERO',
-        'NO_AUTO_CREATE_USER',
+        // 'NO_AUTO_CREATE_USER', //php 8.3.4 sql_model not allow
         'NO_ENGINE_SUBSTITUTION',
       ],
     ],

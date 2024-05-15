@@ -16,7 +16,7 @@ class MahasiswaController extends Controller
   private array $trueExtension = ['jpg', 'jpeg', 'png', 'JPG', 'JPEG', 'PNG'];
   private int $trueSize = 1024 * 1024; //1mb
 
-  public function index(Request $request): Response|RedirectResponse
+  public function index(): Response|RedirectResponse
   {
     $model['title'] = 'List Mahasiswa';
     $model['tableHeader'] = ['ID', 'Nama', 'Jenis Kelamin', 'Alamat', 'Jumlah<br>Mata Kuliah', 'Aksi'];

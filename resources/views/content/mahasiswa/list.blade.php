@@ -13,6 +13,7 @@
     </div>
     <button type="button" class="btn btn-success show-modal" data-path="modal" data-type="add" data-id="0">Tambah</button>
   </div>
+
   <div class="card-body">
     {{-- Table --}}
     <div class="px-0">
